@@ -1,0 +1,185 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SafeZone</title>
+<meta name="keywords" content="safety, atlanta, maps, accidents, colorful theme" />
+<meta name="description" content="SafeZone is a page for bikers to refer to for tips and information concerning bike routes." />
+<link href="templatemo_style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+<script type="text/javascript" src="js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
+<link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" />
+<style type="text/css">
+body, td, th {
+	font-family: "Bookman Old Style";
+	font-size: 14px;
+}
+iframe[seamless]{
+    background-color: transparent;
+    border: 0px none transparent;
+    padding: 0px;
+    overflow: hidden;
+}
+</style>
+<script type="text/JavaScript" src="js/slimbox2.js"></script>
+</head>
+<body>
+<script>
+function myFunction(){
+
+if(document.getElementById("options_0").checked){
+   document.getElementById("myFrame").src="http://www.prism.gatech.edu/~dcollins36/lcc3710/Heatmapping/BikerFriendly.html";
+   document.getElementById("key").src="images/guides/NotesGuide.png"
+   //biker-friendly
+   
+} else if (document.getElementById("options_1").checked){
+       //accidents
+	document.getElementById("myFrame").src="http://www.prism.gatech.edu/~dcollins36/lcc3710/Heatmapping/Accidents.html"
+	document.getElementById("key").src="images/guides/AccidentGuide.png"
+} else if(document.getElementById("options_2").checked){
+	//common destination
+	document.getElementById("myFrame").src="http://www.prism.gatech.edu/~dcollins36/lcc3710/Heatmapping/Trips.htm"
+	document.getElementById("key").src="images/guides/TripsGuide.png"
+}
+};
+
+</script>
+<div id="templatemo_header">
+  <div id="site_title">
+    <h1>SafeZone</h1>
+  </div>
+</div>
+<div id="templatemo_main">
+  <div id="content">
+    <div id="home" class="section">
+      <div id="home_about" class="box">
+        <h2>Welcome</h2>
+        <h5>Cycle Safety is a website that provides information for bikers in the Atlanta area. In hopes of decreasing the number of bike accidencts and strengthening the connectivity among bikers, this website will provide information concerning bike accidents, biker friendly areas and tips from other bikers just like you. </h5>
+        <h6>The information provided on this website is analyzed based on the information provided by the <a href="http://cycleatlanta.org/"><strong>Cycle Atlanta</strong></a> datasets.</h6>
+      </div>
+      <div id="home_gallery" class="box no_mr"> <a href="images/gallery/bike_01.jpg" rel="lightbox[gallery]"><img src="images/gallery/bike_01.jpg" alt="image 1" width="152" height="152" /></a> <a href="images/gallery/bike_02.jpg" rel="lightbox[gallery]"><img src="images/gallery/bike_02.jpg" alt="image 2" width="152" height="151" /></a> <a href="images/gallery/bike_03.jpg" rel="lightbox[gallery]" class="no_mr"><img src="images/gallery/bike_03.jpg" alt="image 3" width="152" /></a> <a href="images/gallery/bike_04.jpeg" rel="lightbox[gallery]"><img src="images/gallery/bike_04.jpeg" alt="image 4" width="151" height="152" /></a> <a href="images/gallery/bike_05.jpg" rel="lightbox[gallery]"><img src="images/gallery/bike_05.jpg" alt="image 5" width="152" /></a> <a href="images/gallery/bike_06.jpg" rel="lightbox[gallery]" class="no_mr"><img src="images/gallery/bike_06.jpg" alt="image 6" width="152" /></a> </div>
+      <div class="box home_box1 color1"> <a href="#services"><img src="images/templatemo_maps.jpg" alt="Services" width="152" /></a> </div>
+      <div class="box home_box1 color2"> <a href="#testimonial"><img src="images/newsfeed.jpg" alt="Testimonial" width="152" /></a> </div>
+      <div class="box home_box2 color3">
+        <div id="social_links"> <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook" /></a> <a href="https://secure.flickr.com/search/?q=biking"><img src="images/flickr.png" alt="Flickr" /></a> <a href="www.twitter.com"><img src="images/twitter.png" alt="Twitter" /></a> <a href="www.youtube.com"><img src="images/youtube.png" alt="Youtube" /></a> <a href="www.vimeo.com"><img src="images/vimeo.png" alt="Vimeo" /></a>
+          <div class="clear h20"></div>
+          <h3>Social</h3>
+        </div>
+      </div>
+      <div class="box home_box1 color4 no_mr"> <a href="#contact"><img src="images/contact.jpg" alt="Contact" width="152" /></a> </div>
+    </div>
+    <!-- END of home -->
+    
+    <div class="section section_with_padding" id="services">
+      <h2>Maps</h2>
+      <div class="half left">
+        <iframe seamless id="myFrame" src="http://technoargia.free.fr/swftools/examples/transparent_link/bike.gif" width="400" height="360" align="center">
+        <p align="center">Your browser does not support iframes.</p>
+        </iframe>
+      </div>
+      <div class="half right">
+        <p align="center"><strong>Select  the button to see the map relative to your chosen option</strong></p>
+        <div align="center">
+          <table width="265">
+            <tr>
+              <td width="257"><label>
+                <input type="radio" name="options" value="radio" id="options_0" />
+                biker friendly areas</label></td>
+            </tr>
+            <tr>
+              <td><label>
+                <input type="radio" name="options" value="radio" id="options_1" />
+                accidents</label></td>
+            </tr>
+            <tr>
+              <td><label>
+                <input type="radio" name="options" value="radio" id="options_2" />
+                common destinations</label></td>
+            </tr>
+          </table>
+          
+          <p>&nbsp;</p>
+          <button onclick="myFunction()">
+          Submit
+          </button>
+          <p>&nbsp;</p>
+        </div>
+        <div class="img_border img_fr"> <img width="363" height="211" id="key" style="background-color: #000000" /> </div>
+        <p align="center">&nbsp;</p>
+      </div>
+      <!--<div class="clear h40"></div>-->
+      
+      <div class="half left">
+      <br />
+        <p>Click on the radio button to select the information you wish to display. Next, click submit to generate a map with the desired information. </p>
+      </div>
+      <a href="#home" class="slider_nav_btn home_btn">home</a> <a href="#home" class="slider_nav_btn previous_btn">Previous</a> <a href="#testimonial" class="slider_nav_btn next_btn">Next</a> </div>
+    <div class="section section_with_padding" id="testimonial">
+      <h2>News Feed</h2>
+      <p><em>This news feed is composed of tweets from people all over the world. Some tweets are motivational while other tweets provide biker friendly tips. </em></p>
+      <div class="clear h40"></div>
+      <div class="half left">
+        <div class="img_border img_fl"> <img src="images/twitter-icon.png" alt="image 1" width="60" /> </div>
+        <blockquote class="twitter-tweet" lang="en">
+          <p>Bike paniers &amp; baskets improve your carrying capacity and are much safer than bags hanging on handlebars. <a href="https://twitter.com/search?q=%23worththeinvestment&amp;src=hash">#worththeinvestment</a></p>
+          &mdash; Bambrick on Bikes (@Bike_Tips) <a href="https://twitter.com/Bike_Tips/statuses/352143083166633984">July 2, 2013</a></blockquote>
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> 
+      </div>
+      <div class="half right">
+        <div class="img_border img_fl"> <img src="images/twitter-icon.png" alt="image 2" width="60" /> </div>
+        <blockquote class="twitter-tweet" lang="en"><p>If you ride in traffic, you are traffic! Use headlamps and taillights during the day too, to be more visible.</p>&mdash; bike tips (@biketips) <a href="https://twitter.com/biketips/statuses/1469011827">April 7, 2009</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+      <div class="clear h40"></div>
+      <div class="half left">
+        <div class="img_border img_fl"> <img src="images/twitter-icon.png" alt="image 3" width="60" /> </div><blockquote class="twitter-tweet" lang="en">
+          <p>Bikers, you know about this weekend&#39;s heavy traffic. But do you know how to put a <a href="https://twitter.com/search?q=%23bike&amp;src=hash">#bike</a> on a bus? See video-&gt; <a href="http://t.co/yShN2kNpbD">http://t.co/yShN2kNpbD</a></p>&mdash; Midtown Patch (@MidtownPatch) <a href="https://twitter.com/MidtownPatch/statuses/373122971822333952">August 29, 2013</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </blockquote>
+      </div>
+      <div class="half right">
+        <div class="img_border img_fl"> <img src="images/twitter-icon.png" alt="image 4" width="60" /> </div>
+        <blockquote class="twitter-tweet" lang="en"><p>Don’t forget bike lights, a helmet and extra water! More <a href="https://twitter.com/search?q=%23safety&amp;src=hash">#safety</a> tips from <a href="https://twitter.com/MassBike">@MassBike</a> here: <a href="http://t.co/sbK1HHkTJK">http://t.co/sbK1HHkTJK</a></p>&mdash; Midnight Marathon (@bikebosmarathon) <a href="https://twitter.com/bikebosmarathon/statuses/457657457482162176">April 19, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> </div>
+      <a href="#home" class="slider_nav_btn home_btn">home</a> <a href="#services" class="slider_nav_btn previous_btn">Previous</a> <a href="#contact" class="slider_nav_btn next_btn">Next</a> </div>
+    <div class="section section_with_padding" id="contact">
+      <h2>Contact</h2>
+      <div class="half left">
+        <h4>Quick Contact Form</h4>
+        <p>Please provide your name and email so that we can respond to your message accordingly.</p>
+        <div id="contact_form">
+          <form method="post" name="contact" action="#contact">
+            <div class="left">
+              <label for="author">Name:</label>
+              <input name="author" type="text" class="input_field" id="author" maxlength="40" />
+            </div>
+            <div class="right">
+              <label for="email">Email:</label>
+              <input name="email" type="text" class="input_field" id="email" maxlength="40" />
+            </div>
+            <div class="clear"></div>
+            <label for="text">Message:</label>
+            <textarea id="text" name="text" rows="0" cols="0"></textarea>
+            <input type="submit" class="submit_btn float_l" name="submit" id="submit" value="Send" />
+          </form>
+        </div>
+      </div>
+      <div class="half right">
+        <h4>Mailing Address</h4>
+        <p>North Avenue NW <br />
+          Atlanta, GA, 30332<br />
+          <strong>Email: dcollins36@gatech.edu</strong><br />
+        </p>
+        <div class="clear h20"></div>
+        <div class="img_nom img_border"><span></span>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d212292.7030254941!2d-84.40454181452277!3d33.75876689659273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1398151877614" width="320" height="240" frameborder="0" style="border:0"></iframe>
+        </div>
+        <a href="#home" class="slider_nav_btn home_btn">home</a> <a href="#testimonial" class="slider_nav_btn previous_btn">Previous</a> </div>
+    </div>
+  </div>
+</div>
+<div id="templatemo_footer"> <a class="templatemo_footer_icon" href="http://www.mystockphoto.com" title="Photos"  target="_blank"><img src="images/templatemo_footer_icon.png" alt="Photos" title="Photos from www.mystockphoto.com" /></a>Copyright © 2014 <a href="#">Cycle Safety</a> | <a rel="nofollow" href="http://www.templatemo.com/preview/templatemo_363_metro">Metro</a> by <a href="http://www.templatemo.com" rel="nofollow" target="_parent" title="free templates">templatemo</a> </div>
+<script type='text/javascript' src='js/logging.js'></script>
+</body>
+</html>
